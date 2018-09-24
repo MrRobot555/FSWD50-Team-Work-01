@@ -3,48 +3,47 @@ body {
 
     background-color: #f4e7d5;
     .img_clouds {
-    	display:flex;
-    	position: relative;    
-    	align-items: stretch;  
-        max-height:70%;
-        max-width:100%;
-        img{
-        	width:33%;
-        	height:100%;
+        display: flex;
+        position: relative;
+        align-items: stretch;
+        max-height: 70%;
+        max-width: 100%;
+        img, {
+            width: 33%;
+            height: 100%;
         }
-    .cloud_gramophon{
-    	display:flex;
-    	justify-content:center;
-    	width:100%;	
-    		#gramophon{
-    		z-index: -1;
-    		position:relative;
-    		top:6%;
-    		width:20%;
-    		height:50%;
-			left:-15%;
-			
-    	}
-    }
-    .cloud_ufo{
-		display:flex;
-		justify-content:center;
-		width:100%;
-		#ufo{
-			z-index: -1;
-			position:relative;
-			width:30%;
-			left:-15%;
-			
-		}
-    }
+        .cloud_gramophon {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            #gramophon {
+                z-index: -1;
+                position: relative;
+                top: 6%;
+                width: 20%;
+                height: 50%;
+                left: -15%;
+            }
+        }
+        .cloud_ufo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            #ufo {
+                z-index: -1;
+                position: relative;
+                width: 30%;
+                left: -15%;
+            }
+        }
     }
     .img_people_container {
         display: flex;
-        top:5%;
+        top: 5%;
         position: absolute;
         align-items: flex-end;
-        width:100%;	
-        justify-content:center;
+        width: 100%;
+        justify-content: center;
     }
+    
 }
