@@ -1,4 +1,15 @@
-body .img_container {
-  display: flex; }
+body {
+  margin: 0;
+  background-color: #f4e7d5; }
+  body .img_clouds {
+    display: flex;
+    position: absolute;
+    max-height: 30%; }
+  body .img_people_container {
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    display: flex;
+    align-items: flex-end; }
 
 /*# sourceMappingURL=index.css.map */
