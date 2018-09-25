@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  background-color: #f4e7d5; }
+  body #ufo {
+    position: absolute;
+    top: 6%;
+    right: 1.8%; }
+  body #gramofon {
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    width: 80px; }
+  body .nav {
+    position: absolute;
+    right: 1vw;
+    top: 14vh;
+    width: auto;
+    height: 30vh;
+    z-index: 50;
+    animation: shit 2s ease-in;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around; }
+@keyframes shit {
+  0% {
+    transform: translateY(1vh);
+    font-size: 0.01vw;
+    border-radius: 0.01%;
+    opacity: 0.1; }
+  50% {
+    transform: translateY(15vh);
+    opacity: 1; }
+  100% {
+    transform: translateY(20vh);
+    font-size: 2vw;
+    border-radius: 50%;
+    opacity: 0.5; } }
+  body .nav a {
+    margin: 0;
+    display: none;
+    color: grey;
+    padding: 1vw 1.1vw;
+    text-decoration: none;
+    font-size: 1.5vmax;
+    animation: shit 2s ease-in;
+    transition: 1s;
+    align-self: center;
+    text-align: center; }
+  body .nav a:hover {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    opacity: 1; }
+  body .nav_top {
+    width: 5vw; }
+  body .nav_middle {
+    width: 7vw; }
+  body .nav_bottom {
+    width: 10vw; }
+  body .img_clouds img {
+    width: 100%;
+    height: 250px; }
+  body .img_people_container {
+    z-index: -1;
+    display: flex;
+    top: 5%;
+    position: absolute;
+    align-items: flex-end;
+    width: 100%;
+    justify-content: center; }
+    body .img_people_container img {
+      height: 1000px; }
+  body #full-page-video {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999; }
+  body .close-full-page-video {
+    cursor: pointer;
+    color: white;
+    font-size: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: 300; }
+
+/*# sourceMappingURL=index.css.map */

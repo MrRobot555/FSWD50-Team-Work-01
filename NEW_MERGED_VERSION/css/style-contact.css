@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 18px; }
+
+/* Contact form*/
+header {
+  background-color: gray;
+  height: 150px;
+  margin-bottom: 30px; }
+
+form {
+  width: 50%;
+  margin: auto; }
+
+input, textarea {
+  width: 60%;
+  font-size: 100%;
+  padding: 6px 0 6px 6px;
+  margin-bottom: 9px;
+  border: 1px solid darkgray; }
+
+textarea {
+  height: 150px; }
+
+label {
+  font-size: 130%; }
+
+input[type=submit] {
+  margin: 0 auto; }
+
+.contact {
+  display: flex; }
+
+.wrap1 {
+  padding-left: 10px; }
+
+/*# sourceMappingURL=style-contact.css.map */
