@@ -5,13 +5,13 @@ function Info(firstName, secondName, email, phone, message) {
     this.phone = phone;
     this.message = message;
 }
+
 function getData() {
 var x = new Info(document.getElementById("fname").value, document.getElementById("sname").value, document.getElementById("email").value, document.getElementById("phone").value, document.getElementById("message").value);
 console.log(document.getElementById("fname").value);
 document.write(x);
 }
 
-document.getElementById("submit").addEventListener("click", getData);
 
 function allNumbers(num){ 
 	var numbers = /^[0-9]+$/;
@@ -40,7 +40,7 @@ function allLetters(let) {
 	return false;
 	}
 }
-function checkBlanks {
+function checkBlanks() {
 if(document.getElementById("fname").value.length==0){
 		document.getElementById('err').innerText = "* All fields are mandatory *";
 		document.getElementById("fname").focus();
@@ -68,6 +68,23 @@ else {
 		return false;
 }
 }
+
+function validateForm() {
+	if (checkBlanks()) {
+		if (allLetters(document.getElementById("fname"))) {
+			if (allLetters(document.getElementById("sname"))) {
+				if (allNumbers(document.getElementById("phone"))){
+					return true;
+				}
+			}
+		}
+	}
+}
+
+document.getElementById("btn").addEventListener("click", validateForm)
+
+
+
 
 
 
