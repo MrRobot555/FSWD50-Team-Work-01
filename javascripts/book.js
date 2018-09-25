@@ -1,4 +1,9 @@
 var numPanels = $('.panel').length;
+var nico = document.getElementById("link_nico");
+var marco = document.getElementById("link_marco");
+var tom = document.getElementById("link_tom");
+var delia = document.getElementById("link_delia");
+var mustafa = document.getElementById("link_mustafa");
 
 // if a panel is open, lower its z-idx
 // otherwise, set zIdx back to original
