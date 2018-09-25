@@ -6,6 +6,9 @@ function playAudio() {
     sound.play(); 
 } 
 
-function openBook(){
-	var SiteToOpen = document.getElementById("delia");
+
+function redirectPage(){
+
+
+
 }
