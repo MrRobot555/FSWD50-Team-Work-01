@@ -1,6 +1,6 @@
 html {
     box-sizing: border-box;
-    background-image: url(https://i.pinimg.com/736x/91/1b/0b/911b0b865fa42e1c7086f9742ed61406--vintage-backgrounds-vintage-wallpapers.jpg);
+    background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -57,7 +57,8 @@ h1 {
     position: relative;
     width: 450px;
     height: 550px;
-    left: 800px;
+    margin: auto;
+    top: 150px;
     perspective: 1200px;
     border-radius: 50px 20px;
 }
