@@ -1,6 +1,5 @@
 body {
     margin: 0;
-
     background-color: #f4e7d5;
     .img_clouds {
         display: flex;
@@ -45,5 +44,10 @@ body {
         width: 100%;
         justify-content: center;
     }
-    
+    a:hover{
+        margin:0px 10px;
+        background-color: #f4e7a0;
+        border:2px solid white;
+
+    }
 }

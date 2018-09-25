@@ -37,5 +37,9 @@ body {
     align-items: flex-end;
     width: 100%;
     justify-content: center; }
+  body a:hover {
+    margin: 0px 10px;
+    background-color: #f4e7a0;
+    border: 2px solid white; }
 
 /*# sourceMappingURL=index.css.map */
