@@ -1,0 +1,119 @@
+//this is a copy of the CSS for the index.html, to make the nabar
+
+body {
+    margin: 0;
+
+    background-color: #f4e7d5;
+    .img_clouds {
+        display: flex;
+        position: relative;
+        align-items: stretch;
+        max-height: 70%;
+        max-width: 100%;
+        img, {
+            width: 33%;
+            height: 100%;
+        }
+        .cloud_gramophon {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            #gramophon {
+                z-index: 10;
+                position: relative;
+                top: 6%;
+                width: 20%;
+                height: 50%;
+                left: -15%;
+            }
+        }
+        .cloud_ufo {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            #ufo {
+                z-index: 20;
+                position: relative;
+                width: 30%;
+                left: 13%;
+            }
+        }
+    }
+    .img_people_container {
+        display: flex;
+        top: 5%;
+        position: absolute;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: center;
+    }
+
+//here comes the navbar part
+    //navbarwrapper
+    .nav {
+        position: absolute;
+        right: 1vw;
+        top: 14vh;
+        width: auto;
+        height: 40vh; //if you change the height you will move the a-elements further or closer to each other
+        z-index: 50;
+        animation: shit 2s ease-in;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+//we want an effect where the 
+    @keyframes shit {
+        0% {
+            transform: translateY(1vh); //this causes the "drop" effect from the UFO
+            font-size: 0.01vw;
+            border-radius: 0.01%;
+            opacity: 0.1;
+        }
+        50% {
+            transform: translateY(15vh);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(20vh);
+            font-size: 2vw;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    }
+
+    .nav a {
+        margin: 0;
+        display: none;
+        color: grey;
+        padding: 1vw 1.1vw;
+        text-decoration: none;
+        font-size: 1.5vmax;
+        animation: shit 2s ease-in;
+        transition: 1s;
+        align-self: center;
+        text-align: center; 
+    }
+    
+    .nav a:hover {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    opacity: 1;
+    }
+
+    //the following three classes are necessary because we 
+    //need a pyramid under the ufo
+    .nav_top {
+        width: 5vw;
+    }
+
+    .nav_middle {
+        width: 7vw;
+    }
+
+    .nav_bottom {
+        width: 10vw;
+    }
+
+}
