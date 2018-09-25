@@ -1,38 +1,63 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  font-size: 18px; }
+  font-size: 18px;
+  background-color: #f4e7d5; }
+  body header {
+    background-color: #f4e7d5;
+    height: 150px;
+    margin-bottom: 30px; }
+    body header .img_clouds {
+      display: flex;
+      position: relative;
+      align-items: stretch;
+      max-height: 70%;
+      max-width: 100%; }
+      body header .img_clouds img {
+        width: 33%;
+        height: 100%; }
+      body header .img_clouds .cloud_gramophon {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        body header .img_clouds .cloud_gramophon #gramophon {
+          position: relative;
+          top: 6%;
+          width: 15%;
+          left: -15%; }
+      body header .img_clouds .cloud_ufo {
+        display: flex;
+        justify-content: center;
+        width: 100%; }
+        body header .img_clouds .cloud_ufo #ufo {
+          position: relative;
+          width: 30%;
+          left: -15%; }
+  body h1 {
+    text-align: center;
+    font-size: 150%;
+    padding-top: 20px; }
+  body .form form {
+    background-color: #f4e7d5;
+    width: 35%;
+    margin: auto;
+    padding-top: 50px; }
+    body .form form input, body .form form textarea {
+      width: 100%;
+      font-size: 100%;
+      padding: 6px 0 6px 6px;
+      margin-bottom: 9px;
+      border: 1px solid darkgray; }
+    body .form form textarea {
+      height: 150px; }
+    body .form form label {
+      font-size: 130%; }
+    body .form form input[type=submit] {
+      margin: 0 auto;
+      width: 30%;
+      height: 40px;
+      text-align: center;
+      border-radius: 25px;
+      display: block; }
 
-/* Contact form*/
-header {
-  background-color: gray;
-  height: 150px;
-  margin-bottom: 30px; }
-
-form {
-  width: 50%;
-  margin: auto; }
-
-input, textarea {
-  width: 60%;
-  font-size: 100%;
-  padding: 6px 0 6px 6px;
-  margin-bottom: 9px;
-  border: 1px solid darkgray; }
-
-textarea {
-  height: 150px; }
-
-label {
-  font-size: 130%; }
-
-input[type=submit] {
-  margin: 0 auto; }
-
-.contact {
-  display: flex; }
-
-.wrap1 {
-  padding-left: 10px; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-contact.css.map */
