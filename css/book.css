@@ -1,12 +1,19 @@
 html {
+
     box-sizing: border-box;
-    background-image: url(../img/background.png);
+    background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
     height: 100%;
-}
 
+
+}
+*{
+
+    font-family: 'MedievalSharp', cursive;
+
+}
 
 h1 {
     text-align: center;
@@ -17,7 +24,7 @@ h1 {
 }
 
 #num {
-    text-align: center;
+    margin: auto;
 }
 
 
@@ -49,7 +56,7 @@ h1 {
 }
 
 .flip-panel {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     box-shadow: 2px 2px 2px 2px black;
@@ -58,13 +65,13 @@ h1 {
     width: 450px;
     height: 550px;
     margin: auto;
-    top: 150px;
+    top: 270px;
     perspective: 1200px;
     border-radius: 50px 20px;
 }
 
 .panel {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     transition: z-index 1s ease-in-out 1s;
@@ -78,7 +85,7 @@ h1 {
 .panel,
 .panel .front,
 .panel .back {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     box-shadow: 2px 2px 2px 2px #784532;
@@ -96,7 +103,7 @@ h1 {
 }
 
 .panel .front {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     border-radius: 50px 20px;
@@ -110,7 +117,7 @@ h1 {
 }
 
 .panel .back {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     border-radius: 50px 20px;
@@ -125,7 +132,7 @@ h1 {
 }
 
 .panel .front:hover {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     -moz-transform: rotateY(-10deg);
@@ -148,7 +155,7 @@ h1 {
 }
 
 .panel.open .front {
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVWSaWt3u0cWZV1wsQuWWlYbrMCO1dkeasmsU1aHAtavFzCbe0MA);
+    background-image: url(https://i.pinimg.com/236x/2d/8c/3f/2d8c3fdba97a0ce07df9c1ec7b53c505.jpg);
     background-repeat: no-repeat;
     background-size: 450px 550px;
     z-index: 1;
@@ -210,4 +217,52 @@ p {
 
 #par1 {
     text-align: center;
+}
+
+#table_of_content .content p{
+    font-family: 'MedievalSharp', cursive;
+    color: #3A230A;
+    font-size: 2em;
+    margin: 16px auto;
+    border-bottom: 1px solid brown;
+    width: 60%;
+    text-align: center;
+}
+#heading {
+    padding-top: 50px;
+    font-family: 'MedievalSharp', cursive;
+
+    font-size: 3em;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .per-info {
+
+    padding-top: 30px;
+    justify-content: center;
+    width: 47%;
+    font-weight: bold;
+
+}
+.content .per-info p{
+    text-align: center;
+    width: 100%;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.2em;
+}
+.content p{
+     font-family: 'MedievalSharp', cursive;
+    padding: 0 20px;
+    font-size: 1em;
+}
+.back .content {
+
+        justify-content: center;
+
+}
+.back .content #back_heading {
+font-size: 3em;
 }
