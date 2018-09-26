@@ -1,15 +1,21 @@
+html {
+    background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080_sepia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+
 body {
-    background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080.jpg);
-     background-length: auto;
-    margin: 0;
-    background-color: #f4e7d5;
-    background-repeat:no-repeat;
+      margin: 0;
+    
+    
     
     #gramofon{
         position: absolute;
-        top:3%;
-        left:400px;
+        bottom:15vw;
+        right:1vw;
         width:5vw;
+        z-index: 14;
 
 
     }
@@ -17,7 +23,7 @@ body {
     .ufo_wrapper {
         position: absolute;
         top:6%;
-        right:1.8%;
+        right:10.8%;
         width: 13vw;
         height: auto;
         display: flex;
@@ -68,10 +74,10 @@ body {
     .nav a {
         margin: 0;
         display: none;
-        color: grey;
+        color: #595959;
         padding: 1vw 1.1vw;
         text-decoration: none;
-        font-size: 1.5vmax;
+        
         animation: shit 2s ease-in;
         transition: 1s;
         align-self: center;
@@ -81,26 +87,30 @@ body {
     .nav a:hover {
     background-color: grey;
     color: black;
-    border-radius: 50%;
+    border-radius: 5%;
     opacity: 1;
     }
 
     //the following three classes are necessary because we 
     //need a pyramid under the ufo
     .nav_zero {
-        width: 4vw;
+        width: 5vw;
+        font-size: 1vmax;
     }
 
     .nav_top {
-        width: 6vw;
+        width: 9vw;
+        font-size: 2vmax;
     }
 
     .nav_middle {
-        width: 8vw;
+        width: 11vw;
+        font-size: 2.5vmax;
     }
 
     .nav_bottom {
-        width: 10vw;
+        width: 16vw;
+        font-size: 3vmax;
     }
   
     .img_people_container {
@@ -109,7 +119,7 @@ body {
         position:absolute;
         width: 100%;
         height:80%;
-        bottom:0;
+        bottom:1vw;
         min-width: 1100px;
     }
     #full-page-video {
@@ -178,4 +188,5 @@ body {
         width:80%;
         height:40%
     }
+}
 }

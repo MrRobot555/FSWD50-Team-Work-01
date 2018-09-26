@@ -26,7 +26,7 @@ function get_hide_ufo_menu (){
 		document.getElementById("navbar").style.display = "flex";
 		
 		var x = 500;
-		for (let i = 0; i < 3; i++) {
+		for (let i = 0; i < 4; i++) {
 			setTimeout(function(){
 				document.getElementsByClassName("nav_a")[i].style.display = "block";
 			}, x);

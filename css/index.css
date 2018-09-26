@@ -1,38 +1,41 @@
-body {
-  background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080.jpg);
-  background-length: auto;
-  margin: 0;
-  background-color: #f4e7d5;
-  background-repeat: no-repeat; }
-  body #gramofon {
-    position: absolute;
-    top: 3%;
-    left: 400px;
-    width: 5vw; }
-  body .ufo_wrapper {
-    position: absolute;
-    top: 6%;
-    right: 1.8%;
-    width: 13vw;
-    height: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column; }
-  body #ufo {
-    position: relative;
-    width: 13vw;
-    height: auto; }
-  body .nav {
-    position: relative;
-    right: 1vw;
-    top: 14vh;
-    width: 100%;
-    height: auto;
-    z-index: 50;
-    animation: shit 2s ease-in;
-    display: none;
-    flex-direction: column;
-    justify-content: space-around; }
+html {
+  background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080_sepia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  html body {
+    margin: 0; }
+    html body #gramofon {
+      position: absolute;
+      bottom: 15vw;
+      right: 1vw;
+      width: 5vw;
+      z-index: 14; }
+    html body .ufo_wrapper {
+      position: absolute;
+      top: 6%;
+      right: 10.8%;
+      width: 13vw;
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column; }
+    html body #ufo {
+      position: relative;
+      width: 13vw;
+      height: auto; }
+    html body .nav {
+      position: relative;
+      right: 1vw;
+      top: 14vh;
+      width: 100%;
+      height: auto;
+      z-index: 50;
+      animation: shit 2s ease-in;
+      display: none;
+      flex-direction: column;
+      justify-content: space-around; }
 @keyframes shit {
   0% {
     transform: translateY(1vh);
@@ -47,93 +50,96 @@ body {
     font-size: 2vw;
     border-radius: 50%;
     opacity: 0.5; } }
-  body .nav a {
-    margin: 0;
-    display: none;
-    color: grey;
-    padding: 1vw 1.1vw;
-    text-decoration: none;
-    font-size: 1.5vmax;
-    animation: shit 2s ease-in;
-    transition: 1s;
-    align-self: center;
-    text-align: center; }
-  body .nav a:hover {
-    background-color: grey;
-    color: black;
-    border-radius: 50%;
-    opacity: 1; }
-  body .nav_zero {
-    width: 4vw; }
-  body .nav_top {
-    width: 6vw; }
-  body .nav_middle {
-    width: 8vw; }
-  body .nav_bottom {
-    width: 10vw; }
-  body .img_people_container {
-    z-index: 1;
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    bottom: 0;
-    min-width: 1100px; }
-  body #full-page-video {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 999; }
-  body .close-full-page-video {
-    cursor: pointer;
-    color: white;
-    font-size: 60px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-weight: 300; }
-  body #img_nico {
-    position: absolute;
-    left: 0;
-    height: 33vw;
-    bottom: 5vw;
-    width: auto;
-    min-height: 500px; }
-  body #img_marco {
-    position: absolute;
-    left: 12vw;
-    height: 43vw;
-    bottom: 0;
-    width: auto;
-    min-height: 500px; }
-  body #img_tom {
-    position: absolute;
-    left: 27vw;
-    height: 45vw;
-    bottom: 0;
-    width: auto;
-    min-height: 500px; }
-  body #img_delia {
-    position: absolute;
-    left: 40vw;
-    height: 40vw;
-    bottom: 3vw;
-    width: auto;
-    min-height: 500px; }
-  body #img_mustafa {
-    position: absolute;
-    left: 52vw;
-    height: 41vw;
-    bottom: 0;
-    width: auto;
-    min-height: 500px; }
-  body #shadow {
-    z-index: -1;
-    position: absolute;
-    width: 80%;
-    height: 40%; }
+    html body .nav a {
+      margin: 0;
+      display: none;
+      color: #595959;
+      padding: 1vw 1.1vw;
+      text-decoration: none;
+      animation: shit 2s ease-in;
+      transition: 1s;
+      align-self: center;
+      text-align: center; }
+    html body .nav a:hover {
+      background-color: grey;
+      color: black;
+      border-radius: 5%;
+      opacity: 1; }
+    html body .nav_zero {
+      width: 5vw;
+      font-size: 1vmax; }
+    html body .nav_top {
+      width: 9vw;
+      font-size: 2vmax; }
+    html body .nav_middle {
+      width: 11vw;
+      font-size: 2.5vmax; }
+    html body .nav_bottom {
+      width: 16vw;
+      font-size: 3vmax; }
+    html body .img_people_container {
+      z-index: 1;
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 80%;
+      bottom: 1vw;
+      min-width: 1100px; }
+    html body #full-page-video {
+      display: none;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999; }
+    html body .close-full-page-video {
+      cursor: pointer;
+      color: white;
+      font-size: 60px;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-weight: 300; }
+    html body #img_nico {
+      position: absolute;
+      left: 0;
+      height: 33vw;
+      bottom: 5vw;
+      width: auto;
+      min-height: 500px; }
+    html body #img_marco {
+      position: absolute;
+      left: 12vw;
+      height: 43vw;
+      bottom: 0;
+      width: auto;
+      min-height: 500px; }
+    html body #img_tom {
+      position: absolute;
+      left: 27vw;
+      height: 45vw;
+      bottom: 0;
+      width: auto;
+      min-height: 500px; }
+    html body #img_delia {
+      position: absolute;
+      left: 40vw;
+      height: 40vw;
+      bottom: 3vw;
+      width: auto;
+      min-height: 500px; }
+    html body #img_mustafa {
+      position: absolute;
+      left: 52vw;
+      height: 41vw;
+      bottom: 0;
+      width: auto;
+      min-height: 500px; }
+    html body #shadow {
+      z-index: -1;
+      position: absolute;
+      width: 80%;
+      height: 40%; }
 
 /*# sourceMappingURL=index.css.map */

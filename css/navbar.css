@@ -96,5 +96,45 @@ body {
     top: 20px;
     left: 20px;
     font-weight: 300; }
+  body #img_nico {
+    position: absolute;
+    left: 0;
+    height: 33vw;
+    bottom: 5vw;
+    width: auto;
+    min-height: 500px; }
+  body #img_marco {
+    position: absolute;
+    left: 12vw;
+    height: 43vw;
+    bottom: 0;
+    width: auto;
+    min-height: 500px; }
+  body #img_tom {
+    position: absolute;
+    left: 27vw;
+    height: 45vw;
+    bottom: 0;
+    width: auto;
+    min-height: 500px; }
+  body #img_delia {
+    position: absolute;
+    left: 40vw;
+    height: 40vw;
+    bottom: 3vw;
+    width: auto;
+    min-height: 500px; }
+  body #img_mustafa {
+    position: absolute;
+    left: 52vw;
+    height: 41vw;
+    bottom: 0;
+    width: auto;
+    min-height: 500px; }
+  body #shadow {
+    z-index: -1;
+    position: absolute;
+    width: 80%;
+    height: 40%; }
 
 /*# sourceMappingURL=navbar.css.map */

@@ -5,10 +5,14 @@
     <title></title>
     <meta http-equiv="refresh" content="60;../index.html" />
     <link rel="stylesheet" type="text/css" href="../../css/videopage.css">
-  
 </head>
 
 <body>
+    <iframe src="../../mp3/bg_music.mp3" allow="autoplay" style="display:none" id="iframeAudio">
+    </iframe>
+    <audio autoplay loop id="playAudio">
+        <source src="audio/source.mp3">
+    </audio>
     <!-- The video -->
     <video autoplay muted loop id="myVideo">
         <source src="../../videos/tom_turn_2.mp4" type="video/mp4">
@@ -16,14 +20,13 @@
     <!-- Optional: some overlay text to describe the video -->
     <div class="content">
         <form action="../../html/book.html">
-        <button class="button">Skip</button>
+            <button class="button">Skip</button>
         </form>
         <form action="../../html/index.html">
-        <button class="button">Back to character selection</button>
-      </form>
+            <button class="button">Back to character selection</button>
+        </form>
     </div>
-
-<script src="../../javascripts/videopage.js"></script>
+    <script src="../../javascripts/videopage.js"></script>
 </body>
 
 </html>
