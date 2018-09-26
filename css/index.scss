@@ -17,8 +17,6 @@ body {
         right:1vw;
         width:5vw;
         z-index: 14;
-
-
     }
 //ufo_wrapper wraps the ufo together with the navbar
     .ufo_wrapper {
@@ -36,7 +34,26 @@ body {
         position:relative;
         width: 13vw;
         height: auto;
+        animation: moving 3s cubic-bezier(.36,.07,.19,.97) both infinite;
     }
+
+    @keyframes moving {
+         10%, 90% {
+            transform: translate(-1px, -1px);
+          }
+          
+          20%, 80% {
+            transform: translate(2px, 2px);
+          }
+
+          30%, 50%, 70% {
+            transform: translate(-4px, -4px);
+          }
+
+          40%, 60% {
+            transform: translate(4px, 4px);
+          }
+}
 
 //navbar is happening here
      .nav {
@@ -51,6 +68,20 @@ body {
         flex-direction: column;
         justify-content: space-around;
     } 
+
+    .nav a {
+        margin: 0;
+        display: none;
+        color: white;// This is the more elegant version for the text #595959;
+        font-weight: bolder;
+        padding: 1vw 1.1vw;
+        text-decoration: none;
+        animation: shit 2s ease-in;
+        transition: 1s;
+        align-self: center;
+        text-align: center; 
+    }
+    
     //we want an effect where the nav-elements drop out of the UFO like bombs, this is done
     //with an animation 0%-->50%-->100%
     @keyframes shit {
@@ -72,20 +103,6 @@ body {
         }
     }
 
-    .nav a {
-        margin: 0;
-        display: none;
-        color: white;// This is the more elegant version for the text #595959;
-        font-weight: bolder;
-        padding: 1vw 1.1vw;
-        text-decoration: none;
-        
-        animation: shit 2s ease-in;
-        transition: 1s;
-        align-self: center;
-        text-align: center; 
-    }
-    
     .nav a:hover {
     background-color: grey;
     color: black;
