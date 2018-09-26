@@ -1,3 +1,14 @@
+TEMPLATE:
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+
+
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
 Hi, my name is Delia. I am working as a front-end web developer within the company for 3 years now. 
 
 I enjoy the job because of the self reward of finishing a project and the ability to see the website from anywhere in the world on any device. The internet is so powerful and I love the reward from creating something that has the potential to be viewed by so many people.
