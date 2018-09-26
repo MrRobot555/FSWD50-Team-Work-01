@@ -31,3 +31,8 @@ book: MUSTAFA!
 
 submit: MUSTAFA
 - change background
+
+DELIA:
+- Finish the styling for Blog, Contact, Impressum (check http://image.slidesharecdn.com/sozialerwertmarkenen-100216114203-phpapp01/95/social-brand-value-13-728.jpg?cb=1266320533)
+- Make a JSON Import for the blog page (fetch URL from JSON and put it into the containers)
+- Translate into Romanian language. 
