@@ -7,47 +7,56 @@
 </head>
 
 <body>
-<!--navbar code entered by Marco-->   
-    <div id="navbar" class="nav">
-            <a class="nav_top nav_a" href="#">Blog</a>
-            <a class="nav_middle nav_a" href="#">Contact</a>
-            <a class="nav_bottom nav_a" href="#">Impressum</a>
-    </div>
-<!--end of navbar code entered by Marco--> 
+
     <audio id="sound">
         <source src="../mp3/bg_music.mp3"></source>
     </audio>
+     
+
     <div class="img_clouds">
-        <div class="cloud_gramophon">
-            <img src="../img/cloud1.png" alt="">
-            <a id="grammo_a" href="#">
-                <img id="gramophon" src="../img/gramophon.png" alt="">
-            </a>
-        </div>
-        <img src="../img/cloud2.png" alt="">
-        <div class="cloud_ufo">
-            <img src="../img/cloud3.png" alt="">
-            <img id="ufo" src="../img/ufo.png" alt="">
+       <img src="../img/clouds.png" alt="">
+    </div>
+
+    <img id="gramofon" src="../img/gramofon.png" alt="">
+    
+    <div class="ufo_wrapper">    
+        <img id="ufo" src="../img/ufo.png" alt="">
+        
+        <div id="navbar" class="nav">
+            <a class="nav_zero nav_a" href="index.html">Home</a>
+            <a class="nav_top nav_a" href="blog.html">Blog</a>
+            <a class="nav_middle nav_a" href="contact.html">Contact</a>
+            <a class="nav_bottom nav_a" href="impressum.html">Impressum</a>
         </div>
     </div>
+    
     <div class="img_people_container">
-        <div id="img_delia">
-            <img src="../img/img_delia.png" alt="">
-        </div>
-        <div id="img_nico">
-            <img src="../img/img_nico.png" alt="">
-        </div>
-        <div id="img_marco">
-            <img src="../img/img_marco.png" alt="">
-        </div>
-        <div id="img_mustafa">
-            <img src="../img/img_mustafa.png" alt="">
-        </div>
-        <div id="img_tamas">
-            <img src="../img/img_tamas.png" alt="">
-        </div>
+        <a href="videopages/nico.html" class="watch-video">
+            <div>
+                <img id="img_nico" src="../img/nico_v2.png" onmouseover="this.src='../img/nico_v1.png'" onmouseout="this.src='../img/nico_v2.png'"alt="">
+            </div>
+        </a>
+        <a href="videopages/marco.html">
+            <div>
+                <img id="img_marco" src="../img/marco_v2.png"onmouseover="this.src='../img/marco_v1.png'" onmouseout="this.src='../img/marco_v2.png'" alt="">
+            </div>
+        </a>
+        <a href="videopages/tom.html">
+            <div>
+                <img id="img_tom" src="../img/tom_v2.png"onmouseover="this.src='../img/tom_v1.png'" onmouseout="this.src='../img/tom_v2.png'" alt="">
+            </div>
+        </a>
+        <a href="videopages/delia.html">
+            <div>
+                <img id="img_delia" src="../img/delia_v2.png"onmouseover="this.src='../img/delia_v1.png'" onmouseout="this.src='../img/delia_v2.png'" alt="">
+            </div>
+        </a>
+        <a href="videopages/mustafa.html">
+            <div>
+                <img id="img_mustafa" src="../img/mustafa_v2.png"onmouseover="this.src='../img/mustafa_v1.png'" onmouseout="this.src='../img/mustafa_v2.png'" alt="">
+            </div>
+        </a>
     </div>
-    <script src="../javascripts/index.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="../javascripts/navbar.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 
