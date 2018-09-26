@@ -1,0 +1,7 @@
+var data = [{
+	"pic": "https://images.pexels.com/photos/358160/pexels-photo-358160.jpeg?cs=srgb&dl=car-vehicle-vintage-358160.jpg&fm=jpg"
+}, {
+	"pic":"https://images.pexels.com/photos/242811/pexels-photo-242811.jpeg?auto=compress&cs=tinysrgb&h=350"
+}, {
+	"pic":"https://images.pexels.com/photos/242433/pexels-photo-242433.jpeg?auto=compress&cs=tinysrgb&h=350"
+}]
