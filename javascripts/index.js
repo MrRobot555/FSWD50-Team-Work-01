@@ -1,20 +1,47 @@
-document.getElementById("gramophon").addEventListener("click", playAudio);
+document.getElementById('ufo').addEventListener("click",get_hide_ufo_menu,false);
+document.getElementById('gramofon').addEventListener("click",playAudio,false);
+var isPlaying = false;
+var myAudio = document.getElementById("sound");
 
 function playAudio() { 
-    var sound = document.getElementById("sound"); 
-    document.log(sound);
-    sound.play(); 
+  if (isPlaying) {
+    myAudio.pause()
+  } else {
+    myAudio.play();
+  }
 } 
 
+myAudio.onplaying = function() {
+  isPlaying = true;
+};
+myAudio.onpause = function() {
+  isPlaying = false;
+};
 
-$('.watch-video').click(function() { $('#full-page-video').fadeIn(); });
-$('.close-full-page-video').click(function() {
-var $frame = $('#full-page-video iframe');
-// saves the current iframe source
-var vidsrc = $frame.attr('src');
-// sets the source to nothing, stopping the video
-$frame.attr('src','');
-// sets it back to the correct link so that it reloads immediately on the next window open
-$frame.attr('src', vidsrc);
-$('#full-page-video').fadeOut();
-});
+
+
+
+function get_hide_ufo_menu (){
+		console.log('in the hide function')
+		document.getElementById("navbar").style.display = "flex";
+		
+		var x = 500;
+		for (let i = 0; i < 3; i++) {
+			setTimeout(function(){
+				document.getElementsByClassName("nav_a")[i].style.display = "block";
+			}, x);
+			x += 1000;
+		}
+}
+
+
+
+function hover(element, source) {
+  element.setAttribute('src', source);
+}
+
+function unhover(element, source) {
+  element.setAttribute('src', source);
+}
+
+

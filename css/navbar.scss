@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    background-color: #f4e7d5;
+    
+//here comes the styling for the header
+    .img_clouds{
+        img{
+            width:100%;
+            height:12vw;
+        }
+    }
+    
+    #gramofon{
+        position: absolute;
+        top:2%;
+        left:3%;
+        width:5vw;
+    }
+
+//ufo_wrapper wraps the ufo together with the navbar
+    .ufo_wrapper {
+        position: absolute;
+        top:6%;
+        right:1.8%;
+        width: 13vw;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    #ufo{
+        position:relative;
+        width: 13vw;
+        height: auto;
+    }
+
+//navbar is happening here
+     .nav {
+        position: relative;
+        right: 1vw;
+        top: 14vh;
+        width: 100%;
+        height: auto; //if you change the height you will move the a-elements further or closer to each other
+        z-index: 50;
+        animation: shit 2s ease-in;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+    //we want an effect where the nav-elements drop out of the UFO like bombs, this is done
+    //with an animation 0%-->50%-->100%
+    @keyframes shit {
+        0% {
+            transform: translateY(1vh); //this causes the "drop" effect from the UFO
+            font-size: 0.01vw;
+            border-radius: 0.01%;
+            opacity: 0.1;
+        }
+        50% {
+            transform: translateY(15vh);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(20vh);
+            font-size: 2vw;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    }
+
+    .nav a {
+        margin: 0;
+        display: none;
+        color: grey;
+        padding: 1vw 1.1vw;
+        text-decoration: none;
+        font-size: 1.5vmax;
+        animation: shit 2s ease-in;
+        transition: 1s;
+        align-self: center;
+        text-align: center; 
+    }
+    
+    .nav a:hover {
+    background-color: grey;
+    color: black;
+    border-radius: 50%;
+    opacity: 1;
+    }
+
+    //the following three classes are necessary because we 
+    //need a pyramid under the ufo
+    .nav_zero {
+        width: 4vw;
+    }
+
+    .nav_top {
+        width: 6vw;
+    }
+
+    .nav_middle {
+        width: 8vw;
+    }
+
+    .nav_bottom {
+        width: 10vw;
+    }
+
+//the team members get styled here
+    .img_people_container {
+        z-index:-1;
+        display: flex;
+        top: 5%;
+        position: absolute;
+        align-items: flex-end;
+        width: 100%;
+        justify-content: center;
+  
+        img{
+            height:53vw;
+
+        }
+       
+    }
+//the full-page video styling is happening here
+    #full-page-video {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    .close-full-page-video {
+        cursor: pointer;
+        color: white;
+        font-size: 60px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-weight: 300;
+    }
+    #img_nico{
+    position:absolute;
+    left:0;
+    height:33vw;
+    bottom:5vw;
+
+    width: auto;
+    min-height: 500px;
+    }
+    #img_marco{
+    position:absolute;
+    left:12vw;
+    height:43vw;
+    bottom:0;
+    width: auto;
+    min-height: 500px;
+    }
+    #img_tom{
+    position:absolute;
+    left:27vw;
+    height:45vw;
+    bottom:0;
+    width: auto;
+    min-height: 500px;
+    }
+    #img_delia{
+    position:absolute;
+    left:40vw;
+    height:40vw;
+    bottom:3vw;
+    width: auto;
+    min-height: 500px;
+
+    }
+    #img_mustafa{
+    position:absolute;
+    left:52vw;
+    height:41vw;
+    bottom:0;
+    width: auto;
+    min-height: 500px;
+    }
+    #shadow{
+        z-index:-1;
+        position:absolute;
+        width:80%;
+        height:40%
+    }
+}

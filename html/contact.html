@@ -8,14 +8,28 @@
 </head>
 <body>
 	<header id="header" class="">
-		
+		<audio id="sound">
+        	<source src="../mp3/bg_music.mp3"></source>
+    	</audio>
+	    <div class="img_clouds">
+	        <div class="cloud_gramophon">
+	            <img src="../img/cloud1.png" alt="">
+	            <img id="gramophon" type="image" src="../img/gramofon.png">
+	        </div>
+	        <img src="../img/cloud2.png" alt="">
+	        <div class="cloud_ufo">
+	            <img src="../img/cloud3.png" alt="">
+	            <img id="ufo" src="../img/ufo.png" alt="">
+	        </div>
+	    </div>
 	</header><!-- /header -->
-	<div class="hero"></div>
-	<form action="submit.html" method="get" accept-charset="utf-8">
+	<h1>Contact us</h1>
+	<div class="form">
+		<form action="submit.html" method="get" accept-charset="utf-8">
 		<div id="err">	
 		</div>
 		<label>First name:</label><br>
-		<input type="text" name="Name" placeholder="First Name" id="fname"><br>
+		<input align="center" type="text" name="Name" placeholder="First Name" id="fname"><br>
 		<label>Second name:</label><br>
 		<input type="text" name="Name" placeholder="Second Name" id="sname"><br> 
 		<label>Email address:</label><br>
@@ -27,7 +41,9 @@
 		<input type="submit" id="btn">
 	</form>
 
-<script src="../javascripts/script-contact.js" type="text/javascript" charset="utf-8" async defer></script>
+	</div>
+	
+
 
 </body>
 </html>

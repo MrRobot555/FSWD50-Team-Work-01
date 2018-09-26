@@ -1,0 +1,38 @@
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    display:flex; //should be display:flex
+    flex-flow:row;
+    position: fixed;
+    bottom: 0;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+.button {
+    height:60px;
+    margin-top:5px;
+    width: 120px;
+    font-size: 18px;
+    padding: 3px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-right:60px;
+    font-size:15px;
+}
+
+.button:hover {
+    background: #ddd;
+    color: black;
+}
