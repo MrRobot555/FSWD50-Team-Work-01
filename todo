@@ -1,9 +1,8 @@
-book: MUSTAFA!
-- put the background image screenshot from index.html (change the background to the screenshot of the index (add some blur))
-- fill the content in the textbook
-- add the menu from the other sub-pages (blog.html)
-- insert the pics from Tamas for the team members
+book:
+- fill the content in the textbook for (Tamas, Delia and Nico)
 
-submit: MUSTAFA
-- change background to the one from the index.html
-- change the font to the one from the index.html
+videopage:
+- use the font from the index.html
+- the redirect doesn't work after the video is finished
+- add the mp3 to the existing videos
+- implement the left over videos!
