@@ -1,6 +1,8 @@
 body {
+  background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080.jpg);
   margin: 0;
-  background-color: #f4e7d5; }
+  background-color: #f4e7d5;
+  max-height: 100%; }
   body #ufo {
     position: absolute;
     top: 6%;
@@ -57,19 +59,23 @@ body {
     width: 7vw; }
   body .nav_bottom {
     width: 10vw; }
-  body .img_clouds img {
-    width: 100%;
-    height: 250px; }
-  body .img_people_container {
-    z-index: -1;
-    display: flex;
-    top: 5%;
+  body .img_clouds {
     position: absolute;
+    z-index: -2; }
+    body .img_clouds img {
+      width: 100%;
+      height: 250px; }
+  body .img_people_container {
+    z-index: 1;
+    display: flex;
     align-items: flex-end;
+    position: absolute;
+    position-bottom: 0;
     width: 100%;
+    height: 100%;
     justify-content: center; }
     body .img_people_container img {
-      height: 1000px; }
+      height: 800px; }
   body #full-page-video {
     display: none;
     position: fixed;
@@ -86,5 +92,35 @@ body {
     top: 20px;
     left: 20px;
     font-weight: 300; }
+  body #img_nico {
+    position: absolute;
+    left: 0;
+    height: 550px;
+    bottom: 130px; }
+  body #img_marco {
+    position: absolute;
+    left: 350px;
+    height: 700px;
+    bottom: 0px; }
+  body #img_tom {
+    position: absolute;
+    left: 800px;
+    height: 800px;
+    bottom: 0px; }
+  body #img_delia {
+    position: absolute;
+    right: 0;
+    height: 400px;
+    bottom: 230px; }
+  body #img_mustafa {
+    position: absolute;
+    right: 0;
+    height: 400px;
+    bottom: 230px; }
+  body #shadow {
+    z-index: -1;
+    position: absolute;
+    width: 80%;
+    height: 40%; }
 
 /*# sourceMappingURL=index.css.map */
