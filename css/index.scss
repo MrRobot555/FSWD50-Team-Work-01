@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
 html {
     background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080_sepia.jpg);
     background-position: center;
@@ -7,8 +9,7 @@ html {
 
 body {
       margin: 0;
-    
-    
+      font-family: 'MedievalSharp', cursive;
     
     #gramofon{
         position: absolute;
@@ -74,7 +75,8 @@ body {
     .nav a {
         margin: 0;
         display: none;
-        color: #595959;
+        color: white;// This is the more elegant version for the text #595959;
+        font-weight: bolder;
         padding: 1vw 1.1vw;
         text-decoration: none;
         

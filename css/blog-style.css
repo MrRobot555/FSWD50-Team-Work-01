@@ -1,62 +1,115 @@
-body {
-  margin: 0 auto;
-  background-color: #f4e7d5; }
-  body header {
-    background-color: #f4e7d5;
-    height: 150px;
-    margin-bottom: 30px; }
-    body header .img_clouds {
+@import url("https://fonts.googleapis.com/css?family=MedievalSharp");
+html {
+  background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080_sepia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  html body {
+    font-family: 'MedievalSharp', cursive;
+    margin: 0 auto; }
+    html body h1 {
+      font-size: 3vw;
+      margin: auto; }
+    html body .container {
+      width: 60%;
+      margin: 0 auto;
       display: flex;
-      position: relative;
-      align-items: stretch;
-      max-height: 70%;
-      max-width: 100%; }
-      body header .img_clouds img {
-        width: 33%;
-        height: 100%; }
-      body header .img_clouds .cloud_gramophon {
+      margin-bottom: 60px;
+      background-color: #f4e7d5;
+      position: relative; }
+      html body .container .pic_wrapper {
         display: flex;
-        justify-content: center;
-        width: 100%; }
-        body header .img_clouds .cloud_gramophon #gramophon {
-          position: relative;
-          top: 6%;
-          width: 15%;
-          left: -15%; }
-      body header .img_clouds .cloud_ufo {
-        display: flex;
-        justify-content: center;
-        width: 100%; }
-        body header .img_clouds .cloud_ufo #ufo {
-          position: relative;
-          width: 30%;
-          left: -15%; }
-  body h1 {
-    text-align: center; }
-  body .container {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 60px; }
-    body .container .picture {
-      width: 500%; }
-      body .container .picture img {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        padding: 1vw; }
+      html body .container .picture {
         width: 100%;
-        height: 100%;
-        border: solid #fff;
-        border-width: 6px 6px 20px 6px;
-        box-shadow: 1px 1px 5px #333; }
-    body .container .content {
-      padding-left: 35px;
-      text-align: justify;
-      vertical-align: center; }
-      body .container .content h3 {
-        border-top: 2px solid gray;
-        border-bottom: 2px solid gray; }
-      body .container .content p::first-letter {
-        font-size: 450%;
-        margin-right: 4px;
+        height: auto; }
+        html body .container .picture img {
+          width: 100%;
+          height: auto;
+          border: solid #fff;
+          border-width: 6px 6px 20px 6px;
+          box-shadow: 1px 1px 5px #333; }
+      html body .container .content {
+        padding-left: 35px;
+        text-align: justify;
         float: left;
-        color: gray; }
+        font-size: 1.3vw;
+        padding: 2vw; }
+        html body .container .content h3 {
+          border-top: 2px solid gray;
+          border-bottom: 2px solid gray; }
+        html body .container .content p::first-letter {
+          font-size: 450%;
+          margin-right: 4px;
+          float: left;
+          color: gray; }
+    html body .ufo_wrapper {
+      position: absolute;
+      top: 6%;
+      right: 2.3vw;
+      width: 13vw;
+      height: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column; }
+    html body #ufo {
+      position: relative;
+      width: 13vw;
+      height: auto; }
+    html body .nav {
+      position: relative;
+      right: 1vw;
+      top: 14vh;
+      width: 100%;
+      height: auto;
+      z-index: 50;
+      animation: shit 2s ease-in;
+      display: none;
+      flex-direction: column;
+      justify-content: space-around; }
+@keyframes shit {
+  0% {
+    transform: translateY(1vh);
+    font-size: 0.01vw;
+    border-radius: 0.01%;
+    opacity: 0.1; }
+  50% {
+    transform: translateY(15vh);
+    opacity: 1; }
+  100% {
+    transform: translateY(20vh);
+    font-size: 2vw;
+    border-radius: 50%;
+    opacity: 0.5; } }
+    html body .nav a {
+      margin: 0;
+      display: none;
+      color: white;
+      padding: 1vw 1.1vw;
+      text-decoration: none;
+      animation: shit 2s ease-in;
+      transition: 1s;
+      align-self: center;
+      text-align: center; }
+    html body .nav a:hover {
+      background-color: grey;
+      color: black;
+      border-radius: 5%;
+      opacity: 1; }
+    html body .nav_zero {
+      width: 5vw;
+      font-size: 1vmax; }
+    html body .nav_top {
+      width: 9vw;
+      font-size: 2vmax; }
+    html body .nav_middle {
+      width: 11vw;
+      font-size: 2.5vmax; }
+    html body .nav_bottom {
+      width: 16vw;
+      font-size: 3vmax; }
 
 /*# sourceMappingURL=blog-style.css.map */

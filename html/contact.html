@@ -7,43 +7,48 @@
 
 </head>
 <body>
-	<header id="header" class="">
-		<audio id="sound">
-        	<source src="../mp3/bg_music.mp3"></source>
-    	</audio>
-	    <div class="img_clouds">
-	        <div class="cloud_gramophon">
-	            <img src="../img/cloud1.png" alt="">
-	            <img id="gramophon" type="image" src="../img/gramofon.png">
-	        </div>
-	        <img src="../img/cloud2.png" alt="">
-	        <div class="cloud_ufo">
-	            <img src="../img/cloud3.png" alt="">
-	            <img id="ufo" src="../img/ufo.png" alt="">
-	        </div>
-	    </div>
-	</header><!-- /header -->
-	<h1>Contact us</h1>
-	<div class="form">
-		<form action="submit.html" method="get" accept-charset="utf-8">
-		<div id="err">	
-		</div>
-		<label>First name:</label><br>
-		<input align="center" type="text" name="Name" placeholder="First Name" id="fname"><br>
-		<label>Second name:</label><br>
-		<input type="text" name="Name" placeholder="Second Name" id="sname"><br> 
-		<label>Email address:</label><br>
-		<input type="email" name="Email" placeholder="Email address" id="email"><br> 
-		<label>Phone number:</label><br>
-		<input type="text" name="Phone" placeholder="Phone number" id="phone"><br> 
-		<label>Leave us a message:</label><br>
-		<textarea name="message" placeholder="Leave us a message" id="message"></textarea>
-		<input type="submit" id="btn">
-	</form>
-
-	</div>
+	<div class="ufo_wrapper">    
+        <img id="ufo" src="../img/ufo.png" alt="">
+        
+        <div id="navbar" class="nav">
+            <a class="nav_zero nav_a" href="index.html">Home</a>
+            <a class="nav_top nav_a" href="blog.html">Blog</a>
+            <a class="nav_middle nav_a" href="contact.html">Contact</a>
+            <a class="nav_bottom nav_a" href="impressum.html">Legal Note</a>
+        </div>
+    </div> 
 	
+	<div class="content">
+		
+		
+		
+		<div class="column">
+			<img src="../img/column1.png" alt="">
+		</div>
+			<div class="form">
+				<h1>Contact us</h1>
+				<form action="submit.html" method="get" accept-charset="utf-8">
+				<div id="err">	
+				</div>
+				<label>First name:</label><br>
+				<input align="center" type="text" name="Name" placeholder="First Name" id="fname"><br>
+				<label>Second name:</label><br>
+				<input type="text" name="Name" placeholder="Second Name" id="sname"><br> 
+				<label>Email address:</label><br>
+				<input type="email" name="Email" placeholder="Email address" id="email"><br> 
+				<label>Phone number:</label><br>
+				<input type="text" name="Phone" placeholder="Phone number" id="phone"><br> 
+				<label>Leave us a message:</label><br>
+				<textarea name="message" placeholder="Leave us a message" id="message"></textarea>
+				<input type="submit" id="btn">
+				</form>
+			</div>
+		<div class="column">
+			<img src="../img/column1.png" alt="">
+		</div>
+		
+	</div>
 
-
+<script src="../javascripts/index.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>

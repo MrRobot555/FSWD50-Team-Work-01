@@ -1,80 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
+
+html {
+    background-image: url(../img/schloss_schnbrunn_wien_vienna-wallpaper-1920x1080_sepia.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+
 body {
+font-family: 'MedievalSharp', cursive;
 margin:0;
 padding:0;
 font-size:18px;
-background-color:#f4e7d5;
-	header {
-	background-color: #f4e7d5;
-	height:150px;
-	margin-bottom:30px;
-	.img_clouds {
-        display: flex;
-        position: relative;
-        align-items: stretch;
-        max-height: 70%;
-        max-width: 100%;
-        img {
-            width: 33%;
-            height: 100%;
-        }
-        .cloud_gramophon {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            #gramophon {
-                position: relative;
-                top: 6%;
-                width: 15%;
-                left: -15%;
-            }
-        }
-        .cloud_ufo {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            #ufo {
-                position: relative;
-                width: 30%;
-                left: -15%;
-            }
-        }
-    	}
-	}
+
 	h1 {
 		text-align:center;
 		font-size:150%;
 		padding-top:20px;
 	}
+	.content {
+		background-color:#f4e7d5;
+		width: 60%;
+		margin: 3vw auto 3vw auto;
+		display: flex;
+		justify-content: space-between;
+	}
+	.column img {
+		width: 10vw;
+		height: 100%;
+	}
 	.form {
 		form {
 			background-color:#f4e7d5;
-			width: 35%;
-			margin:auto;
+			width: 100%;
+			margin:auto auto 1vw auto;
 			padding-top:50px;
-		input, textarea {
-			width:100%;
-			font-size:100%;
-			padding: 6px 0 6px 6px;
-			margin-bottom: 9px;
-			border: 1px solid darkgray;
+			input, textarea {
+				width:100%;
+				font-size:100%;
+				padding: 6px 0 6px 6px;
+				margin-bottom: 9px;
+				border: 1px solid darkgray;
+				}
+			textarea {
+				height: 150px;
 			}
-		textarea {
-			height: 150px;
-		}
 
-		label {
-			font-size:130%;
-			
-		}
-		input[type=submit]{
-			margin:0 auto;
-			width:30%;
-			height:40px; 
-			text-align:center;
-			border-radius:25px;
-			display: block;
-
+			label {
+				font-size:130%;
+				
+			}
+			input[type=submit]{
+				margin:0 auto;
+				width:40%;
+				height:40px; 
+				text-align:center;
+				border-radius:25px;
+				display: block;
+			}
 		}
 	}
-	}
+	//ufo_wrapper wraps the ufo together with the navbar
+    .ufo_wrapper {
+        position: absolute;
+        top:6%;
+        right:2.3vw;
+        width: 13vw;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column;  
+    }
+
+    #ufo{
+        position:relative;
+        width: 13vw;
+        height: auto;
+    }
+
+	//navbar is happening here
+     .nav {
+        position: relative;
+        right: 1vw;
+        top: 14vh;
+        width: 100%;
+        height: auto; //if you change the height you will move the a-elements further or closer to each other
+        z-index: 50;
+        animation: shit 2s ease-in;
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+    } 
+    //we want an effect where the nav-elements drop out of the UFO like bombs, this is done
+    //with an animation 0%-->50%-->100%
+    @keyframes shit {
+        0% {
+            transform: translateY(1vh); //this causes the "drop" effect from the UFO
+            font-size: 0.01vw;
+            border-radius: 0.01%;
+            opacity: 0.1;
+        }
+        50% {
+            transform: translateY(15vh);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(20vh);
+            font-size: 2vw;
+            border-radius: 50%;
+            opacity: 0.5;
+        }
+    }
+
+    .nav a {
+        margin: 0;
+        display: none;
+        color: white; //Dies ist die mehr elegante Farbe #595959;
+        padding: 1vw 1.1vw;
+        text-decoration: none;
+        animation: shit 2s ease-in;
+        transition: 1s;
+        align-self: center;
+        text-align: center; 
+    }
+    
+    .nav a:hover {
+    background-color: grey;
+    color: black;
+    border-radius: 5%;
+    opacity: 1;
+    }
+
+    //the following three classes are necessary because we 
+    //need a pyramid under the ufo
+    .nav_zero {
+        width: 5vw;
+        font-size: 1vmax;
+    }
+
+    .nav_top {
+        width: 9vw;
+        font-size: 2vmax;
+    }
+
+    .nav_middle {
+        width: 11vw;
+        font-size: 2.5vmax;
+    }
+
+    .nav_bottom {
+        width: 16vw;
+        font-size: 3vmax;
+    }
+}
 }
