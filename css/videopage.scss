@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=MedievalSharp');
 #myVideo {
     position: fixed;
     right: 0;
@@ -30,6 +30,7 @@
     cursor: pointer;
     margin-right:60px;
     font-size:15px;
+    font-family: 'MedievalSharp', cursive;
 }
 
 .button:hover {
