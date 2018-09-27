@@ -24,18 +24,20 @@ html {
         flex-direction: column;
         padding: 1vw; }
       html body .container .picture {
-        width: 100%;
-        height: auto; }
+        width: 100%; }
         html body .container .picture img {
           width: 100%;
           height: auto;
           border: solid #fff;
           border-width: 6px 6px 20px 6px;
           box-shadow: 1px 1px 5px #333; }
+      html body .container .picture2 {
+        width: 100%; }
+        html body .container .picture2 img {
+          width: 100%; }
       html body .container .content {
-        padding-left: 35px;
+        padding-left: 1vw;
         text-align: justify;
-        float: left;
         font-size: 1.3vw;
         padding: 2vw; }
         html body .container .content h3 {

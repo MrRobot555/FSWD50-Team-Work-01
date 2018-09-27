@@ -30,7 +30,7 @@ body {
 			}
 			.picture {
 				width:100%;
-				height: auto;
+				
 				  img {
 					width:100%;
 					height:auto;
@@ -40,12 +40,15 @@ body {
 					}
 			}
 			.picture2 {
-
-			}
+                width: 100%;
+                
+                 img {
+                    width: 100%;
+			     }
+            }
 			.content {
-				padding-left: 35px;
+				padding-left: 1vw;
 				text-align: justify;
-				float: left;
 				font-size: 1.3vw;
 				padding: 2vw;
 				h3 {
