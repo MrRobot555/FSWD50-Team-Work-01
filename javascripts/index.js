@@ -30,7 +30,7 @@ function get_hide_ufo_menu (){
 			setTimeout(function(){
 				document.getElementsByClassName("nav_a")[i].style.display = "block";
 			}, x);
-			x += 1000;
+			x += 500;
 		}
 }
 

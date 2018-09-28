@@ -63,7 +63,6 @@ body {
         width: 100%;
         height: auto; //if you change the height you will move the a-elements further or closer to each other
         z-index: 50;
-        animation: shit 2s ease-in;
         display: none;
         flex-direction: column;
         justify-content: space-around;
@@ -76,7 +75,7 @@ body {
         font-weight: bolder;
         padding: 1vw 1.1vw;
         text-decoration: none;
-        animation: shit 2s ease-in;
+        animation: shit 1s ease-in;
         transition: 1s;
         align-self: center;
         text-align: center; 
